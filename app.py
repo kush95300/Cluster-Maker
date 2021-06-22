@@ -53,6 +53,10 @@ def findcost():
 def chooseform():
     return render_template("choice.html")
 
+@app.route("/defaultdone")
+def defaultdone():
+    return render_template("defaultdone.html")
+
 
 
 @app.route("/costanalysis")
