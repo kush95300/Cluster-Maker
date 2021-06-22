@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Set the Default Parameters
+    <br>
+    <form action="/costanalysis"><br>
+        
+        NameNode Instance Type : <input type="text" name="nn_instance_type" value="" placeholder="t2.micro"></br>
+        DataNode Instance Type : <input type="text" name="dn_instance_type" value="" placeholder="t2.micro"></br>
+        DataNode Count         : <input type="number" name="dn_count" value="" placeholder="2"></br>
+        Jobtracker Instance Type : <input type="text" name="jt_instance_type" value="" placeholder="t2.micro"></br>
+        Tasktracker Instance Type : <input type="text" name="tt_instance_type" value="" placeholder="t2.micro"></br>
+        Tasktracker Count      : <input type="number" name="tt_count" value="" placeholder="2"></br>
+        EBS Used : <input type="radio" name="ebs" placeholder="yes" value="yes"> Yes <input type="radio" name="ebs" placeholder="no" value="no"> No <br> 
+        EBS Volume Size: <input type="number" name="ebssize" placeholder="50" value=""> Gib<br>
+        <br>
+        <br>
+        <button type="submit">Set Defaults</button>
+    </form>
+</body>
+</html>

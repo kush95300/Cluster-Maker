@@ -14,12 +14,45 @@ def home():
 
 @app.route("/setdefault")
 def setdefaults():
-    print("Default set")
-    return "Default set"
+    return render_template("default.html")
+
+
+@app.route("/selectpage")
+def slectpage():
+    return render_template("selectpage.html")
+
+
+@app.route("/createdefaultcluster")
+def defaultsclustermaker():
+    return "Creating Default Cluster"
+
+@app.route("/createadvancecluster")
+def advanceclustermaker():
+    return render_template("advanceform.html")
+
+@app.route("/defaultcost")
+def defaultcost():
+    return "Default cost Output"
+
+@app.route("/login")
+def accountauth():
+    return "login Page"
+
+@app.route("/signup")
+def createaccount():
+    return "Signup Page"
+
+
+
 
 @app.route("/findcost")
 def findcost():
     return render_template("cost_analyser.html")
+
+@app.route("/chooseform")
+def chooseform():
+    return render_template("choice.html")
+
 
 
 @app.route("/costanalysis")
